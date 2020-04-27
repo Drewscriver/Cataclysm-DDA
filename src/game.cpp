@@ -9665,6 +9665,7 @@ bool game::phasing_move( const tripoint &dest_loc )
 
         u.grab( OBJECT_NONE );
         on_move_effects();
+        m.creature_on_trap( u );
         return true;
     }
 
